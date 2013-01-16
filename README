@@ -1,0 +1,10 @@
+How to use the uploaded files:
+
+gameIdeaGen.py
+    This file has one function named "generate_game_idea()" which returns a 
+    string that describes a game with one or two descriptors, a genre, and a setting.
+
+recursiveCrawler.py
+    This file has one function named "FindLinks(url)". When called, pass in a string url
+    in the form of "http://address.com/". It will then return a list of links on that
+    domain.
