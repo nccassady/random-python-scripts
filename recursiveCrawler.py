@@ -11,6 +11,9 @@ def FindLinks(url):
         try:
             if link.get('href') in links:
                 break
+            # Due to Google sites having randomly generated strings,
+            # I omit those. Otherwise, the script would run for an
+            # obscenely long time.
             else:
                 if link.get('href').find('accounts.google') > -1 \
                         or link.get('href').find('google.com') > -1:
